@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="expires" content="0">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>    
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+     <link rel="stylesheet" href="css/libs/animate.css">
+	<title>ЛЬВІВСЬКИЙ МЕДИЧНИЙ ФОРУМ</title>
+	<script src="js/main.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- timer -->
+
+	<link href="logo_slider/thumbs2.css" rel="stylesheet" />
+    <link href="logo_slider/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+    <script src="logo_slider/thumbnail-slider.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+	<div class="videoContainer">
+		<video poster="bg/bg.jpg" autoplay="true" loop="true" muted playsinline="webkit-playsinline">
+			<source src="bg/galmedbg.mp4" type="video/mp4">
+		</video>
+		<div class="videoContainerBg"></div>
+
+		<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YugFTOIWsq4?autoplay=1&loop=1&playlist=7cjVj1ZyzyE&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+	</div>
+
+	<div class="header">
+		<div class="logo">
+   			<a href="#"><img class="wow swing" src="img/00.gif" alt="GalMED logo"></a>
+   			<h1><!-- <span>львівський медичний форум</span><br /> -->
+			26-та медична<br />виставка "ГалМЕД"</h1>
+    	</div>
+
+		<div class="menu">
+			<a href="#">Головна</a>
+			<a href="#participants">Учасникам</a>
+			<a href="#visitors">Відвідувачам</a>
+			<a href="#photovideo">Фотогалерея</a>
+			<a href="#news">Програма</a>
+			<a href="#ourPartners">Партнери</a>
+			<a href="#contacts">Контакти</a>
+		</div>
+
+		<div class="lang">
+			<!-- <img src="img/ru.png" alt="lang rus"> --><img src="img/en.png" alt="lang eng">
+		</div>
+    </div>
+
+ 	<div class="main">
+
+ 		<section class="mainVideoFrame">
+ 			<p>7-9 квітня 2020</p>
+ 			<span>львівський медичний форум</span><br />
+ 			<p>м. Львів, вул. Коперника, 17
+ 			<br>Львівський Палац Мистецтв)</p>
+ 			<button  class="wow pulse" data-wow-iteration="infinite" data-wow-duration="1000ms" id="orderInv" onclick="window.open('https://visitors.galexpo.com.ua:4201/user/login?idex=313')">отримати запрошення</button>
+ 		</section>
+			
+   		<!-- <img class="mainImg" src="img/header.jpg" alt="GalMED header"> -->
+
+   		<section class="about">
+   			<p>ЛЬВІВСЬКИЙ МЕДИЧНИЙ ФОРУМ - найбільша медична подія Західної України, куди з'їжджаються науковці, спеціалісти з різних галузях медицини, представники відомих фірм-виробників Європи та безпосередньо виробники виробів медичного призначення та обладнання, фармацевтичних препаратів всієї України. 
+   			За роки свого існування саме цей захід став ідеальним місцем для просування новинок, методик лікування та передових технологій, обміну досвідом між спеціалістами різних регіонів України та зарубіжжя. 
+		 	У рамках Форуму буде проведено ряд науково-практичних конференцій, лекторіїв, майстер-класів та практичних демонстрацій за участю провідних спеціалістів та відомих фірм-виробників галузі. 
+		  	Форум проходить за підтримки МОЗ України та Департаменту охорони здоров'я Львівської обласної державної адміністрації. 
+		   	Львівський медичний форум та наукові заходи внесені у "Реєстр медичних виставок та реєстр з’їздів, конгресів, симпозіумів, науково-практичних конференцій, які проводитимуться у 2020 році".</p>
+
+		   	<div class="thematic_wrap">
+		   		<div id="participants"></div>
+   				<p class="mainData" id="show">Тематичні розділи виставки "Гал-МЕД"</p>
+   				<div id="thematic">
+					<div class="flex_wrap">		
+						<div class="flex_item">
+							<img src="img/thematic_01.jpg" alt="">
+							<img id="secondImg" src="img/thematic_02.jpg" alt="">
+							<img src="img/thematic_03.jpg" alt="">
+						</div>	
+						<div class="flex_item">	
+						<p class="thematic_text">
+	   					• Лікувальне, діагностичне та реабілітаційне обладнання;<br />
+						• Медичні прилади та інструменти;<br />
+						• Лабораторна медицина;<br />
+						• Засоби реабілітації та товари для людей з обмеженими можливостями;<br />
+						• Засоби надання невідкладної допомоги;<br />
+						• Офтальмологічні послуги та обладнання;<br />
+						• Оптика та окуляри;<br />
+						• Фармацевтичні препарати;<br />
+						• Сучасна клініка та послуги;<br />
+						• Медичний одяг, засоби санітарії та дезінфекції;<br />
+						• Страхова медицина;<br />
+						• Біологічно активні добавки, фіто-продукти та лікувальна косметика<br />
+						В рамках виставки:<br />
+						• V спеціалізована експозиція «Реабілітація»<br />
+						• V спеціалізована експозиція «Медичний туризм»<br />
+						</p>
+						</div>	
+					</div>
+
+   					<div id="hide">Сховати</div>
+   				</div>
+   			</div>
+   		</section>
+
+   		<section class="participants">
+   			<h2 class="wow bounceInDown">учасникам</h2>
+   			<div class="participants_wrap">
+   				<p class="wow bounceInLeft"><img src="img/icon_04.gif" alt=""><br />
+   				Виставка та Форум проводяться щорічно</p>
+   				<p class="wow bounceInLeft"><img src="img/icon_02.gif" alt=""><br />
+   				Чудова можливість для нових знайомств</p>
+
+   				<p class="wow bounceInRight"><img src="img/icon_03.gif" alt=""><br />
+   				Медичні тренди та новітні технології</p>
+				<p class="wow bounceInRight"><img src="img/icon_01.gif" alt=""><br />
+				Безпосередня комунікація з відвідувачем</p>
+   			</div>
+
+   			<div class="participantsPhoto">
+   				<img class="wow fadeInDown" src="img/001.jpg" alt="">
+   				<img class="wow fadeInDown" src="img/002.jpg" alt="">
+   				<img class="wow fadeInDown" src="img/003.jpg" alt="">
+   			</div>
+
+   			<div class="participantsBtns">
+   				<a href="http://www.galexpo.com.ua/images/vustavku/tur-expo/2015/umovy_uchasti.pdf" target="_blank">Умови<br />участі</a>
+   				<a href="http://www.galexpo.com.ua/images/vustavku/galmed/2019/prices.pdf">Основні<br />ціни</a>
+   				<a href="https://forms.gle/pUZaeH7vSxkFnx776" target="_blank" id="orderPart">Замовити<br />участь</a>
+   				<a href="http://www.galexpo.com.ua/images/vustavku/portfolio.pdf" target="_blank">Ексклюзивна<br />забудова</a>
+   				<a href="http://www.galexpo.com.ua/images/vustavku/stomat/2019/additional_gm_19.pdf" target="_blank">Додаткові<br />послуги</a>
+   				<a href="http://www.galexpo.com.ua/images/vustavku/galmed/2019/katal_obladn.pdf" target="_blank">Додаткове<br />обладнання</a>
+   				<div id="visitors"></div>
+   			</div>
+   		</section>
+
+   		<section class="visitors">
+   			<h2 class="wow bounceInDown">Відвідувачам</h2>
+   			<div class="visitors_wrap">
+	   			<h3>Будемо раді бачити Вас на Львівському медичному форумі!</h3>
+
+	   			<h4>Урочисте відкриття виставки:</h4>
+	   			<p class="strong mainData">7 квітня о 10.00</p>
+
+	   			<h4 class="colorRed">До виставки залишилось:</h4> <br />
+
+	   			<!-- /* -timer-*/ -->
+				<div class="timer" data-finish="2020-04-07 10:00:00">
+					<div class="timer_section">
+						<div class="days_1">0</div>
+						<div class="days_2">0</div>
+						<div class="timer_section_desc">днів</div>
+					</div>
+					<div class="timer_delimetr">:</div>
+					<div class="timer_section">
+						<div class="hours_1">0</div>
+						<div class="hours_2">0</div>
+						<div class="timer_section_desc">годин</div>
+					</div>
+					<div class="timer_delimetr">:</div>
+					<div class="timer_section">
+						<div class="minutes_1">0</div>
+						<div class="minutes_2">0</div>
+						<div class="timer_section_desc">хвилин</div>
+					</div>
+					<div class="timer_delimetr">:</div>
+					<div class="timer_section">
+						<div class="seconds_1">0</div>
+						<div class="seconds_2">0</div>
+						<div class="timer_section_desc">секунд</div>
+					</div>
+				</div>
+				<!-- /* -timer-*/ -->
+
+				<h4>Режим роботи виставки:</h4>
+				<p class="wow fadeInDown">7.04 - 10:00 – 18:00<br />
+				8.04 - 10:00 – 18:00<br />
+				9.04 - 10:00 – 17:00</p>
+
+				<h4>Місце проведення:</h4>
+				<p>м. Львів, вул. Коперника, 17<br />(<a class="decorNone colorBlue" href="https://www.google.com.ua/maps/place/49%C2%B050'15.6%22N+24%C2%B001'31.4%22E/@49.837393,24.0241291,17.5z/data=!4m2!3m1!1s0x0:0x0" target="_blank">Львівський Палац Мистецтв</a>)</p>
+
+	   			<div class="participantsBtns mt25">
+	   				<a id="orderInv1" href="https://visitors.galexpo.com.ua:4201/user/login?idex=313" target="_blank">Замовити<br />запрошення</a>
+	   				<a href="http://www.galexpo.com.ua/images/vustavku/galmed/2019/program19.pdf" target="_blank">Програма<br />Форуму 2019</a>
+	   				<a href="http://www.galexpo.com.ua/images/vustavku/galmed/2019/list19.pdf" target="_blank">Список<br />учасників 2019</a>
+	   				<a href="http://www.galexpo.com.ua/images/vustavku/galmed/2019/catalog_19.pdf" target="_blank">Каталог<br />учасників</a>
+	   				<a href="http://www.galexpo.com.ua/images/vustavku/galmed/2019/post_19.pdf" target="_blank">Пост-<br />реліз</a>
+	   				<div id="photovideo"></div>
+	   			</div>
+   			</div>
+   		</section>	
+
+   		<section class="photovideo">
+   			<h2 class="wow bounceInDown">Фото/відео звіт</h2>
+   			
+   			<div class="photovideo_wrap wow fadeInDown">
+   				<div class="w3-display-container wow fadeInDown">
+				  <img class="mySlides" src="gallery/01.jpg">
+				  <img class="mySlides" src="gallery/02.jpg">
+				  <img class="mySlides" src="gallery/03.jpg">
+				  <img class="mySlides" src="gallery/04.jpg">
+				  <img class="mySlides" src="gallery/05.jpg">
+				  <img class="mySlides" src="gallery/06.jpg">
+				  <img class="mySlides" src="gallery/07.jpg">
+				  <img class="mySlides" src="gallery/08.jpg">
+				  <img class="mySlides" src="gallery/09.jpg">
+				  <img class="mySlides" src="gallery/010.jpg">
+				  <!-- <img class="mySlides" src="gallery/011.jpg"> -->
+				  <img class="mySlides" src="gallery/012.jpg">
+				  <img class="mySlides" src="gallery/013.jpg">
+				  <img class="mySlides" src="gallery/014.jpg">
+				  <img class="mySlides" src="gallery/015.jpg">
+				  <img class="mySlides" src="gallery/016.jpg">
+				  <img class="mySlides" src="gallery/017.jpg">
+				  <img class="mySlides" src="gallery/018.jpg">
+				  <img class="mySlides" src="gallery/019.jpg">
+				  <img class="mySlides" src="gallery/020.jpg">
+				  <img class="mySlides" src="gallery/021.jpg">
+				  <img class="mySlides" src="gallery/022.jpg">
+				  <img class="mySlides" src="gallery/023.jpg">
+				  <img class="mySlides" src="gallery/024.jpg">
+				  <img class="mySlides" src="gallery/025.jpg">
+				  <img class="mySlides" src="gallery/026.jpg">
+				  <img class="mySlides" src="gallery/027.jpg">
+				  <img class="mySlides" src="gallery/028.jpg">
+				  <img class="mySlides" src="gallery/029.jpg">
+
+				  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+						showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+						var i;
+						var x = document.getElementsByClassName("mySlides");
+						if (n > x.length) {slideIndex = 1}
+						if (n < 1) {slideIndex = x.length}
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						}
+						x[slideIndex-1].style.display = "block";  
+						}
+				</script>
+   			</div>
+			
+			<p class="mt25"><a class="decorNone" href="https://youtu.be/eL_SUGvMRbQ" target="_blank">Відео-репортаж з виставки</a></p>
+
+   		</section>
+
+		
+		<section class="participantsLogo">
+   			<h2  class="mb25 wow bounceInDown">УЧАСНИКИ 2019</h2>
+   			
+   		<!--Logo CARUSEL start-->
+            <div id="thumbnail-slider">
+                <div class="inner">
+                    <ul>
+                    	<li><a class="thumb" href="img/logos/pic0.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic1.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic2.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic3.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic4.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic5.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic6.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic7.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic8.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic9.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic10.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic11.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic12.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic13.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic14.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic15.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic16.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic17.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic18.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic19.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic20.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic21.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic22.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic23.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic24.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic25.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic26.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic27.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic28.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic29.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic30.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic31.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic32.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic33.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic34.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic35.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic36.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic37.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic38.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic39.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic40.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic41.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic42.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic43.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic44.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic45.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic46.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic47.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic48.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic49.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic50.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic51.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic52.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic53.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic54.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic55.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic56.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic57.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic58.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic59.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic60.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic61.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic62.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic63.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic64.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic65.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic66.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic67.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic68.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic69.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic70.png"></a></li>
+                    	<li><a class="thumb" href="img/logos/pic71.png"></a></li>
+                    </ul>
+                </div>
+       			<div style="clear:both;"></div>
+       			 <div id="news"></div>
+       		</div>
+    	<!--Logo CARUSEL end-->
+
+   		</section>
+
+
+   		<section class="news">
+   			<h2 class="mb25 wow bounceInDown">НАУКОВІ ЗАХОДИ ФОРУМУ:</h2>
+   			
+
+   			<div class="tabs">
+			    <input id="tab1" type="radio" name="tabs" checked>
+			    <label class="mainData wow fadeInDown" for="tab1" title="Вкладка 1">7 квітня</label>
+			 
+			    <input id="tab2" type="radio" name="tabs">
+			    <label class="mainData" for="tab2" title="Вкладка 2">8 квітня</label>
+			 
+			    <input id="tab3" type="radio" name="tabs">
+			    <label class="mainData" for="tab3" title="Вкладка 3">9 квітня</label>
+			    <section id="content-tab1">
+	<p class="blue">
+		Всеукраїнська науково-практична конференція з міжнародною участю 
+		<br><span class="bold">«Неврологічна патологія - нові тенденції в діагностиці та лікуванні з позиції міждисциплінарного підходу»</span>
+		<p class="dark">Організатори:</p>
+		<ul class="dark">
+			<li>Львівський національний медичний університет імені Данила Галицького</li>
+			<li>Львівське обласне товариство неврологів</li>
+			<li>ПрАТ „Гал-ЕКСПО”</li>
+		</ul>
+	</p>
+			 <div id="ourPartners"></div>
+			    </section> 
+
+			    <section id="content-tab2">
+	<p class="blue">
+		Всеукраїнська науково-практична конференція  
+		<br><span class="bold">«Репродуктивні аспекти гінекологічної патології»</span>
+		<p class="dark">Організатори:</p>
+		<ul class="dark">
+			<li>Львівський національний медичний університет імені Данила Галицького</li>
+			<li>Всеукраїнська громадська організація «Асоціація перинатологів України»</li>
+			<li>Львівський осередок ВГО «Асоціації перинатологів України»</li>
+			<li>ПрАТ „Гал-ЕКСПО”</li>
+		</ul>
+	</p>
+
+		<p class="blue mt25">
+		Міжнародна науково-практична конференція 
+		<br><span class="bold">«Сучасні аспекти фізичної та реабілітаційної медицини»</span>
+		<p class="dark">Організатори:</p>
+		<ul class="dark">
+			<li>Українське товариство реабілітаційної медицини</li>
+			<li>Всеукраїнське об’єднання фізичних терапевтів</li>
+			<li>Львівський національний медичний університет імені Данила Галицького</li>
+			<li>Український католицький університет, Школа реабілітаційної медицини</li>
+			<li>Львівський державний університет фізичної культури</li>
+			<li>ПрАТ „Гал-ЕКСПО”</li>
+		</ul>
+	</p>
+			    </section> 
+
+			    <section id="content-tab3">
+	<p class="blue">
+		Науково-практична конференція з міжнародною участю 
+		<br><span class="bold">«Дитяча алергологія вчора, сьогодні і завтра»</span>
+		<p class="dark">Організатори:</p>
+		<ul class="dark">
+			<li>Львівський національний медичний університет імені Данила Галицького</li>
+			<li>КНП «Міська дитяча клінічна лікарня м. Львова»</li>
+			<li>Львівський міський дитячий алергологічний центр</li>
+			<li>ПрАТ „Гал-ЕКСПО”</li>
+		</ul>
+	</p>
+			    </section> 
+			  
+			</div>
+
+		</section>
+		
+
+		<section class="partners" id="partners">
+   			<h2 class="mb25 wow bounceInDown">НАШІ ПАРТНЕРИ:</h2>
+
+   			<div class="mainPartners">
+   				<div id="one">
+   					<h5>За підтримки:</h5>
+   					<p>МОЗ України<br />Департаменту ЛОДА</p>
+   				</div>
+
+   				<div id="two">
+   					<h5>Офіційні партнери форуму:</h5>
+   					<div id="partnersFlex">
+   						<div class="child child75">
+   							<img src="http://www.galexpo.com.ua/images/banners/galmed-15/yfarm.jpg" border="0" width="75" />
+   						</div> 
+						<div class="child child75">
+							<img src="http://www.galexpo.com.ua/images/banners/galmed-16/115.jpg" border="0" width="75" />
+						</div> 
+						<div class="child child75">
+							<img src="http://www.galexpo.com.ua/images/banners/galmed-15/medtur.jpg" border="0" width="75" />
+						</div>
+					</div>
+   				</div>
+
+   				<div id="three">
+   					<h5>Партнер виставки:</h5>
+   					<div class="child">
+   						<img src="http://www.galexpo.com.ua/images/banners/galmed-16/78.jpg" border="0" width="100" />
+   					</div> 
+   				</div>
+
+   				<div id="four">
+   					<h5>Партнери Форуму:</h5>
+   					<div id="partnersFlex1">
+	   					<div class="child child75">
+	   						<img src="http://www.galexpo.com.ua/images/banners/galmed-16/110.jpg" border="0" width="75" />
+	   					</div> 
+	   					<div class="child child75">
+	   						<img src="http://www.galexpo.com.ua/images/banners/galmed-15/666.png" border="0" width="75" />
+	   					</div> 
+						<div class="child child75">
+							<img src="http://www.galexpo.com.ua/images/banners/galmed-15/111.png" border="0" width="75" />
+						</div> 
+						<div class="child child75">
+							<img src="http://www.galexpo.com.ua/images/banners/galmed-15/222.png" border="0" width="75" />
+						</div>	
+						<div class="child child75">
+	   						<img src="http://www.galexpo.com.ua/images/banners/galmed-15/444.jpg" border="0" width="75" />
+	   					</div> 
+	   					<div class="child child75">
+	   						<img src="http://www.galexpo.com.ua/images/banners/galmed-15/555.jpg" border="0" width="75" />
+	   					</div> 
+						<div class="child child75">
+							<img src="http://www.galexpo.com.ua/images/banners/galmed-16/lider.jpg" border="0" width="75">
+						</div> 
+						<div class="child child75">
+							<a href="http://ult.lviv.ua/" target="blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/65.jpg" border="0" width="75" /></a>
+						</div>
+						<div class="child child75">
+							<a href="https://ucu.edu.ua/" target="blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/uku.jpg" border="0" width="75" /></a>
+						</div>
+						<!-- <div class="child child75">
+							<img src="http://www.galexpo.com.ua/images/banners/galmed-16/125.jpg" border="0" width="75" /> 
+						</div> -->
+						<div class="child child75">
+							<img src="http://www.galexpo.com.ua/images/banners/galmed-16/plzd.jpg" border="0" width="75" /> 
+						</div>
+						<div>
+							<span>Львівський осередок ВГО «Асоціації перинатологів України»</span>
+							<span>Львівське обласне товариство неврологів</span>
+							<span>Товариство дитячих пульмонологів і алергологів при УЛТ</span>
+							<span>Львівський осередок Української асоціації фахівців ультразвукової діагностики</span>
+						</div>
+					</div>
+   				</div>
+   			</div>
+
+   			<h3 class="mt25">Виставки-партнери:</h3>
+ 			<div class="mainPartners mainPartnersCenter">
+   			 	<div class="child"><a href="http://publichealth.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/108.gif" border="0" width="100" /></a></div>
+		 		<div class="child"><a href="http://www.ipharmacongress.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/109.png" border="0" width="100" /></a></div>
+		  		<div class="child"><a href="http://medforum.in.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/imf.gif" border="0" width="100" /></a></div>
+   			</div>
+
+			<h3 class="mt25">Інформаційні партнери:</h3>
+			
+   			<div class="partners_wrap">
+				
+			<div id="box">
+			  <div class="child"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/77.jpg" border="0" width="100" /></div>
+			  <div class="child"><a href="https://mazg.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/76.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/79.jpg" border="0" width="100" /></div>
+			  <div class="child"><a href="http://www.vitapol.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/80.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://zidmarket.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/81.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/83.jpg" border="0" width="100" /></div>
+			  <div class="child"><a href="http://health-ua.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/84.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://d-l.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/111.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://kiai.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/112.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://mazm.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/113.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://neuronews.com.ua" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/86.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://amazonky.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/123.png" border="0" width="100"></a></div>
+			  <div class="child"><a href="http://kardiomag.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/124.png" border="0" width="100"></a></div>
+			  <div class="child"><a href="https://itmed.org/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/121.png" border="0" width="100"></a></div>
+			  <div class="child"><a href="https://zdorov-info.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/122.png" border="0" width="100"></a></div>
+			  <div class="child"><a href="https://rpht.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/88.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://med-sestra.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/89.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://pharma-personnel.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/90.gif" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://meddovidka.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/92.png" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://painmedicine.org.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/116.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://perioperative.org.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/117.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://med-ukraine.info/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/118.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://ozdorovie.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/119.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://www.medcentre.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/93.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://www.health-ua.org/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/114.jpg" border="0" width="100" /></a></div>
+		 	  <div class="child"><a href="https://likarni.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/57.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://www.prostodoctor.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/91.png" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://modern-pharmacy.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/70.gif" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://med36.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/55.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://med-expert.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/61.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://www.ujdvc.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/56.gif" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://lemberg-news.info/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/budves-16/080.gif" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://www.doctorgeo.info/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/63.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://ilikar.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/03.png" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://www.medvestnik.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-15/medvisnyk.gif" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://med-info.net.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/pum.jpg" width="100" border="0" /></a></div>
+			  <div class="child"><a href="http://medkniga.kiev.ua/index.php/ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/medbook.gif" width="100" border="0" /></a></div>
+			  <div class="child"><a href="http://www.likar.info/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/likar.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/sm.jpg" border="0" width="100" /></div>
+			  <div class="child"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/alma.jpg" border="0" width="100" /></div>
+			  <div class="child"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/nz.jpg" border="0" width="100" /></div>
+			  <div class="child"><a href="http://uamt.com.ua/UA" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/uamt.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://farmakosha.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/farm.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://pharma.net.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/pharma.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://medqueen.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-14/mmd.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://infomisto.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/infomisto.gif" width="100" border="0" /></a></div>
+			  <div class="child"><a href="http://http//www.032.ua" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/budos-13/032_logo.jpg" width="100" border="0" /></a></div>
+			  <div class="child"><a href="http://www.0342.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/budves-15/0342.png" width="100" border="0" /></a></div>
+			  <div class="child"><a href="http://www.ria.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/elit-15/ria.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://www.mist-tv.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/budves-15/mist.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://lvivconvention.com.ua/en/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/50.png" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://ua.kompass.com/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/51.gif" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://worldexpo.pro/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/gal_world_expo.png" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://profbook.com.ua/medycyna" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/budves-16/091.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://agroc.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/budves-16/092.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://www.reklama4u.com.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/tur16/096.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://lvivski.in.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/lvo.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://www.lvivpost.net/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/ds-14/poshta.png" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://moemisto.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/95.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://www.citylife.net.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/96.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://afisha.lviv.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/97.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://list.in.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/98.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://mydim.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/100.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="http://ap.if.ua/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/99.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://dyvys.info/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/101.jpg" border="0" width="100" /></a></div>
+			  <div class="child"><a href="https://citycard.travel/" target="_blank"><img src="http://www.galexpo.com.ua/images/banners/galmed-16/102.jpg" border="0" width="100" /></a></div>
+
+			<div id="contacts"></div>
+			</div>
+			</div>
+		</section>
+
+
+		<section class="contacts">
+   			<h2 class="mb25 wow bounceInDown">КОНТАКТНА ІНФОРМАЦІЯ:</h2>
+
+   			<div class="contacts_wrap">
+				
+				<div class="cont">
+					<div class="contPhotos">
+						<div><img class="wow bounceInLeft" src="http://www.galexpo.com.ua/images/komanda/lozytska.jpg" border="0" width="75" /></div>
+						<div>
+							<p class="strong">Наталія Миколаївна Лозицька</p>
+							<span>директор з виставкової діяльності</span>
+							<p>тел. <a href="tel:+380676711436">067 6711436</a></p>
+							<p>E-mail: <a href="mailto:nml@galexpo.lviv.ua">nml@galexpo.lviv.ua</a></p>
+						</div>
+					</div>
+
+					<div class="contPhotos">
+						<div><img class="wow bounceInLeft" src="http://www.galexpo.com.ua/images/komanda/borys.jpg" border="0" width="75" /></div>
+						<div>
+							<p class="strong">Борис Зоряна</p>
+							<span>менеджер</span>
+							<p>тел. <a href="tel:+380675093902">067 5093902</a></p>
+							<p>E-mail: <a href="mailto:manage@galexpo.lviv.ua">manage@galexpo.lviv.ua</a></p>
+						</div>
+					</div>
+
+					<div class="contPhotos">
+						<div class="contPhone" id="algnCntr">
+							<p class="strong"><!-- ПрАТ "Гал-ЕКСПО" -->
+								<a href="http://www.galexpo.com.ua/" target="_blank"><img class="wow fadeInDown mt10" src="img/ge_logo.png" border="0" width="105" alt="Gal-EXPO logo" /></a>
+								<br />79008, м.Львів, вул. Винниченка, 30.</p>
+							<p class="strong">тел.:(032) 297-06-28, 297-06-27</p>
+							<p class="strong">факс:(032) 297-17-56</p>
+							<p><a href="https://www.facebook.com/pg/Lviv.Medical.Forum/posts/" target="_blank"><img class="wow fadeInDown mt5" src="img/facebook_logo.png" border="0" width="30" alt="Gal-EXPO facebook" /></a>
+							<a href="https://www.youtube.com/channel/UCmPNw-XB2knyAnGq7rciEyA" target="_blank"><img class="wow fadeInDown mt5" src="img/youtube_logo.png" border="0" width="30" alt="Gal-EXPO youtube" /></a></p>
+						</div>
+					</div>
+
+
+				</div>
+
+
+				<div class="map">
+					<iframe class="wow bounceInRight" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.9114549345536!2d24.034481550938672!3d49.844121238647034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add134a0b700b%3A0xb9bf5fb0dedcfc2d!2z0JPQsNC7LdCV0JrQodCf0J4gKtCf0YDQkNCi!5e0!3m2!1suk!2sua!4v1573941155466!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+			</div>
+
+		</section>
+
+ 		
+    </div> <!-- end of MAIN section -->
+
+
+	<div class="menuFooter">
+		<a href="#">Головна</a>
+		<a href="#participants">Учасникам</a>
+		<a href="#visitors">Відвідувачам</a>
+		<a href="#photovideo">Фото</a>
+		<a href="#news">Програма</a>
+		<a href="#ourPartners">Партнери</a>
+		<a href="#contacts">Контакти</a>
+	</div>
+
+
+    <div class="footer">
+		© Всі права захищені. Приватне акціонерне товариство "Гал-ЕКСПО"®. Design: <a href="http://9.lviv.ua/" target="_blank">9.lviv.ua</a>
+    </div>
+
+
+    <script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>
